@@ -64,6 +64,78 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-js的一个简单数字时钟" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/04/18/js%E7%9A%84%E4%B8%80%E4%B8%AA%E7%AE%80%E5%8D%95%E6%95%B0%E5%AD%97%E6%97%B6%E9%92%9F/" class="article-date">
+  <time datetime="2020-04-18T08:42:51.700Z" itemprop="datePublished">2020-04-18</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/04/18/js%E7%9A%84%E4%B8%80%E4%B8%AA%E7%AE%80%E5%8D%95%E6%95%B0%E5%AD%97%E6%97%B6%E9%92%9F/">js的一个简单数字时钟</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="Clock"><a href="#Clock" class="headerlink" title="Clock"></a>Clock</h2><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        /*时钟的样式*/
+        #clock{           
+            background-color: #bcf;
+            font-size: 24px;
+            font-weight: bold;
+            border-radius: 8px;
+            padding: 8px;
+        }
+    </style>
+<meta name="generator" content="Hexo 4.2.0"></head>
+<body>
+    <span id="clock">1111</span>
+    <script>
+        function displayTime(){
+            //通过id找到显示信息的span标签
+            let clock = document.getElementById('clock');
+            //创建一个data对象
+            let timeNow = new Date();
+            //toLocaleTimeString() 把data对象的时间部分的数据转换成字符串
+            clock.innerHTML = timeNow.toLocaleTimeString();
+            //递归调用displatime方法 每秒一次
+            setTimeout(displayTime, 1000);
+        }
+        //onload 在网页加载完成时 调用这个方法
+        window.onload = displayTime;
+    </script>
+</body>
+</html>
+<br/><br/>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2020/04/18/js%E7%9A%84%E4%B8%80%E4%B8%AA%E7%AE%80%E5%8D%95%E6%95%B0%E5%AD%97%E6%97%B6%E9%92%9F/" data-id="ck95e25mx00022wu182c63h3p" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-this-is-ningning" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2020/04/18/this-is-ningning/" class="article-date">
@@ -91,7 +163,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2020/04/18/this-is-ningning/" data-id="ck950lqzt0001rwu1holpdel4" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2020/04/18/this-is-ningning/" data-id="ck95e25mo00012wu1gu0j6bxm" class="article-share-link">Share</a>
       
       
     </footer>
@@ -140,7 +212,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2020/04/18/hello-world/" data-id="ck950lqzo0000rwu10zcg1zez" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2020/04/18/hello-world/" data-id="ck95e25mh00002wu12u0adp9r" class="article-share-link">Share</a>
       
       
     </footer>
@@ -179,6 +251,10 @@
     <h3 class="widget-title">最新文章</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2020/04/18/js%E7%9A%84%E4%B8%80%E4%B8%AA%E7%AE%80%E5%8D%95%E6%95%B0%E5%AD%97%E6%97%B6%E9%92%9F/">js的一个简单数字时钟</a>
+          </li>
         
           <li>
             <a href="/2020/04/18/this-is-ningning/">this-is-ningning</a>
